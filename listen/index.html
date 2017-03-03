@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+    <meta property="og:site_name" content="Radio Whirlwind: Pokemon Music Radio Station" />
+    <meta property="og:title" content="Radio Whirlwind Web Player" />
+    <meta property="og:description" content="Radio Whirlwind Web Player. Playing the best of Pokemon from the games, anime and the community, all day everyday" />
+    <meta property="og:image" content="/img/favicon.png">
+    <meta property="og:url" content="http://radiowhirlwind.com/">
+    <meta property="og:type" content="radio" />
+    <meta name="description" content="Radio Whirlwind Web Player. Playing the best of Pokemon from the games, anime and the community, all day everyday">
+    <link rel='shortcut icon' href='/img/favicon.ico' type='image/x-icon' />
+    <title>Radio Whirlwind Web Player</title>
+    <script language="javascript" type="text/javascript" src="http://192.157.249.217:2199/system/streaminfo.js"></script>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #EBEBEB;
+            background-repeat: no-repeat;
+            width: 300px;
+            overflow: scroll;
+        }
+        
+        h1 {
+            display: inline;
+            font-family: 'pkmnrs', sans-serif;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        
+        p {
+            margin-top: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            font-family: 'Play', sans-serif;
+            color: #333333;
+        }
+        
+        a {
+            color: #167DFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        img {
+            max-width: 100%;
+            border: none;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        @font-face {
+            font-family: "pkmnrs";
+            src: url(../../fonts/pkmnrs.ttf) format("truetype");
+        }
+        
+        .infobox p {
+            margin: 0;
+            display: inline;
+            line-height: 20px;
+            font-family: "pkmnrs";
+            word-break: break-word;
+            font-size: 15px;
+        }
+        
+        .listen {
+            position: absolute;
+            top: 169px;
+            right: 0;
+            width: 127px;
+            height: 42px;
+        }
+        
+        .listen p {
+            position: relative;
+            right: 0;
+            bottom: 12px;
+            font-family: "pkmnrs";
+            color: white;
+            display: inline;
+        }
+        
+        .listen img {
+            margin: 5px;
+        }
+        
+        #container {
+            width: 420px;
+            height: 605px;
+        }
+        
+        #topbar {
+            z-index: 1;
+            background: url('http://chipbit.net/pixelbanner.png');
+            background-size: 150%;
+            width: 100%;
+            height: 50px;
+        }
+        
+        #logo {
+            align: middle;
+            text-align: center;
+        }
+        
+        #header {
+            width: 98%;
+            height: 4.5%;
+            padding-right: 2%;
+            text-align: right;
+            background-color: #800000;
+        }
+        
+        #content {
+            background: url('../darcy-out/pixel-8.co/whirlwind/themes/poppiesradio/images/content.jpg')
+        }
+        
+        #tzinfo {
+            position: fixed;
+            bottom: 0px;
+            left: 0px;
+            width: auto;
+            background-color: black;
+        }
+        
+        #tzinfo p {
+            color: white;
+        }
+        
+        .show-hide-div {
+            margin-top: 10px;
+            width: 500px;
+            height: 200px;
+            border: solid 0px #000000;
+            padding: 5px;
+            background-color: #FFFFFF;
+            position: absolute;
+            overflow: auto;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+    <div id="container">
+        <div id="topbar">
+            <div id="logo">
+                <a href="http://radiowhirlwind.com"><img src="/img/png_rw.png" align="middle" width="190" height="110" alt="" /></a>
+                </br>
+                </br>
+                <audio controls><source src="http://192.157.249.217:8003/stream?type=.mp3" type="audio/mp3"> <source src="http://192.157.249.217:8003/stream?type=.ogg" type="audio/ogg"/>Your browser does not support the audio element.</audio>
+                </br>
+                <div id="content">
+                    <div class="infobox">
+                        <center>
+                            </br>
+                            <p class="p1">Now Playing:</p>
+                            </br>
+                            <p id="cc_strinfo_title_radiowhirlwind" class="cc_streaminfo"></p><br />
+                            <p id="cc_strinfo_rawmeta_radiowhirlwind" class="cc_streaminfo"></p>
+                            </br>
+                            <img id="cc_strinfo_trackimageurl_radiowhirlwind" class="cc_streaminfo" height="200px" width="200px" /><br />
+                            <p class="p1">Current listeners:</p> <br>
+                            <p id="cc_strinfo_listeners_radiowhirlwind" class="cc_streaminfo"></p> /
+                            <p id="cc_strinfo_maxlisteners_radiowhirlwind" class="cc_streaminfo"></p><br />
+                        </center>
+                        <br>
+                        <p class="p1">Listen to Radio Whirlwind on <a href="http://tunein.com/radio/Radio-Whirlwind-s234982/">TuneIn</a>, <a href="http://streema.com/radios/Radio_Whirlwind_Pokemon_Music_Radio">Streema</a> or <a href="https://t.co/dbZgQISUnE">Radioline.</a></br>
+                            Download <a href="http://192.157.249.217:8003/stream">this file</a> to listen on your own media player.</br>Chat with us on <a href="https://discord.gg/NQPPY27">Discord!</a></br>
+                        </p>
+                        </br>
+
+
+
+
+
+                    </div>
+                    <div id="tzinfo">
+                        <font color="white" size="2">
+                            <p>Copyright &copy; 2016 Radio Whirlwind</p>
+                        </font>
+                    </div>
+</body>
+
+</html>
