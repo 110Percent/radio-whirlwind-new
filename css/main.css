@@ -1,0 +1,97 @@
+/* This is the main CSS file that should be used for every page on the site. */
+
+@font-face {
+    src: url("/fonts/mada.woff2") format("woff2");
+    font-family: "Mada"
+}
+
+body {
+    background: linear-gradient(270deg, #0f98c3, #003e6a);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 25s ease infinite;
+    -moz-animation: AnimationName 25s ease infinite;
+    -o-animation: AnimationName 25s ease infinite;
+    animation: AnimationName 25s ease infinite;
+}
+
+.content-bar {
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #98BAD7 31%, #7fa9c5 99%);
+    font-size: 24px;
+    border: 2px solid black;
+}
+
+.logo {
+    max-width: 100%;
+    border-style: none;
+    height: auto;
+    width: auto;
+}
+
+.header-links {
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.to-home {
+    margin-top: 40px;
+    padding-top: 20px;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 12px;
+    -moz-box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.75);
+    background: linear-gradient(to right, rgba(10, 47, 82, 1) 0%, rgba(8, 36, 68, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0a2f52', endColorstr='#082444', GradientType=1);
+    vertical-align: bottom;
+    letter-spacing: 2px;
+    padding-top: 6px;
+}
+
+.footer .social-links img {
+    margin: 5px;
+}
+
+a {
+    text-decoration: unset;
+}
+
+body,
+a {
+    font-family: 'Mada';
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+.collapsible,
+.collapsible-header {
+    background: transparent !important;
+    border: none;
+}
+
+.collapsible-body {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.collection-item {
+    background: transparent !important;
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
