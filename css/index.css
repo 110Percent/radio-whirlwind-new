@@ -1,0 +1,10 @@
+/* This CSS should apply to index.html */
+
+.album-art {
+    width: 200px;
+    border-radius: 10%;
+}
+
+.whirlwind-player {
+    padding-top: 10px !important;
+}
